@@ -1,0 +1,665 @@
+/*
+CSS RESET
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cardHighlight {
+  min-height: 100%;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./font/Montserrat-VariableFont_wght.ttf") format("truetype");
+  /* src: url("./font/Montserrat-Italic-VariableFont_wght.ttf") format("truetype"); */
+  /* Repeat the above line for each font file in the "Montserrat" folder */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* LOGIN PAGE starts here */
+
+.navBar {
+  background: rgba(255, 255, 255, 0.055);
+  background-position: absolute;
+  margin: auto;
+  left: 0px;
+  top: 0px;
+}
+.nav-link {
+  color: white !important; /* Change the font color */
+  font-size: 16px; /* Change the font size */
+  font-weight: bold; /* Change the font weight */
+  margin-right: 10px; /* Add margin to the right */
+}
+
+.logoNav {
+  margin-left: 40px;
+  padding-right: 20px;
+  transform: scale(1.5);
+}
+.navbar-brand {
+  color: #ffffff !important;
+}
+.d-flex {
+  margin-right: 30px;
+  position: absolute;
+  right: 10px !important;
+}
+.me-2 {
+  transform: scale(0.8);
+}
+.searchBtn {
+  transform: scale(0.8);
+}
+.loginGroup {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  top: -2%;
+}
+
+#root {
+  background-image: url("../public/pics/background2.jpg");
+
+  background-attachment: fixed;
+
+  /* max-height: 1000px; */
+  overflow: auto;
+  height: 250vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginForm {
+  display: -webkit-inline-flex;
+  position: absolute;
+  width: 350px;
+  min-width: none;
+  height: 478px;
+
+  top: 273px;
+  background: rgba(53, 74, 95, 0.5);
+  mix-blend-mode: normal;
+  border-radius: 30px;
+}
+
+.emailBox {
+  position: absolute;
+  max-width: 253px;
+  width: fit-content;
+  min-height: 51px;
+  /* /* left: 595px; */
+  top: 327px;
+
+  background: #d9d9d9;
+  border-radius: 10px;
+}
+
+#emailText {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  width: 179px;
+  height: 21px;
+  /* left: 685px; */
+  top: 384px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+#passText {
+  position: relative;
+  width: 115px;
+  height: 21px;
+  /* left: 674px; */
+  top: 480px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.passBox {
+  position: absolute;
+  max-width: 253px;
+  height: 51px;
+
+  top: 441px;
+  background: #d9d9d9;
+  border-radius: 10px;
+}
+
+#submitBtn {
+  position: relative;
+  max-width: 170px;
+  height: 60px;
+  /* left: 655px; */
+  top: 500px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 51px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  animation: btnTransFadeIn 0.5s ease forwards 0.5s;
+  padding-top: 1px;
+}
+
+@keyframes btnTransFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#submitBtn:hover {
+  box-shadow: 0px 0px 15px rgba(170, 223, 244, 1);
+  transform: scale(1.1);
+}
+
+.btnLoad {
+  position: relative;
+  /* left: 670px; */
+  top: 530px;
+}
+.headerLogin {
+  position: absolute;
+  left: auto;
+  top: 200px;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+  transform: scale(1.3);
+  text-shadow: #6c757d;
+}
+
+/* // FIREPLACE STARTS HERE */
+.campfire {
+  max-width: 100px;
+  top: 500px;
+  margin: 10px auto;
+  position: absolute;
+  right: 60%;
+  transform: scale(0.9);
+}
+#flame-1 {
+  height: 95px;
+  width: 95px;
+  background: #ff7200;
+  position: relative;
+  top: 52px;
+  left: 2px;
+  margin: 30px 70px;
+  border-radius: 0% 50% 70% 50%;
+  transform: rotateZ(45deg) scale(1.1);
+  filter: drop-shadow(0 0 10px #d43322);
+  animation: scale-alternate 2s ease-in-out infinite;
+}
+#flame-2 {
+  height: 75px;
+  width: 75px;
+  background: #ef5a00;
+  position: relative;
+  top: 162px;
+  left: -20px;
+  margin: 30px 70px;
+  border-radius: 0% 40% 60% 40%;
+  transform: scaleX(0.8) rotatez(45deg);
+  filter: drop-shadow(0 0 10px #d43322);
+  animation: scale-up 2s ease-in-out infinite;
+}
+
+#flame-3 {
+  height: 75px;
+  width: 75px;
+  background: #ef5a00;
+  position: relative;
+  top: -60px;
+  left: 50px;
+  margin: 30px 70px;
+  border-radius: 0% 40% 60% 40%;
+  transform: scaleX(0.8) rotatez(45deg);
+  filter: drop-shadow(0 0 10px #d43322);
+  animation: scale-up-3 3s ease-in-out infinite;
+}
+.wood {
+  width: 20px;
+  height: 120px;
+  background: #563111;
+  border-radius: 5px;
+}
+#wood-1 {
+  transform: rotate(72deg);
+  position: relative;
+  top: -220px;
+  left: 117px;
+}
+
+#wood-2 {
+  transform: rotate(106deg);
+  position: relative;
+  top: -340px;
+  left: 115px;
+}
+.small-element {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ef5a00;
+  position: relative;
+  top: -130px;
+  left: 110px;
+}
+#small-element-1 {
+  animation: particle-up 3.5s ease-in-out infinite;
+}
+#small-element-2 {
+  animation: particle-up 3s ease-in-out infinite;
+}
+
+.fire-bottom .main-fire {
+  position: relative;
+  top: -190px;
+  left: 90px;
+  width: 55px;
+  height: 55px;
+  background-color: #ff7800;
+  transform: scaleX(0.8) rotate(45deg);
+  border-radius: 0 40% 100% 40%;
+  filter: blur(8px);
+  animation: glow 2s ease-out 0;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes glow {
+  0%,
+  100% {
+    background: #ef5a00;
+  }
+  50% {
+    background: #ff7800;
+  }
+}
+
+@keyframes scale-up-3 {
+  0%,
+  100% {
+    transform: scale(1.1) rotatez(45deg);
+  }
+  40%,
+  90% {
+    transform: scale(0.96) rotatez(45deg);
+  }
+  30%,
+  75% {
+    transform: scale(0.9) rotatez(45deg);
+  }
+}
+
+@keyframes scale-up {
+  0%,
+  100% {
+    transform: scale(1) rotatez(45deg);
+  }
+  40%,
+  90% {
+    transform: scale(0.96) rotatez(45deg);
+  }
+  30%,
+  75% {
+    transform: scale(0.9) rotatez(45deg);
+  }
+}
+
+@keyframes scale-alternate {
+  0%,
+  100% {
+    transform: scale(1.1) rotatez(45deg);
+  }
+  30%,
+  90% {
+    transform: scale(0.9) rotatez(45deg);
+  }
+  45%,
+  60% {
+    transform: scale(0.96) rotatez(45deg);
+  }
+  50%,
+  75% {
+    transform: scale(0.97) rotatez(45deg);
+  }
+}
+@keyframes particle-up {
+  0% {
+    top: -130px;
+    left: 110px;
+  }
+  100% {
+    position: relative;
+    opacity: 0.8;
+    top: -270px;
+    left: 145px;
+    transform: scale(0.1);
+  }
+}
+.loginParagraph {
+  position: absolute;
+  right: -70px;
+  justify-content: center;
+  top: 640px;
+  color: #ccc;
+  transform: scale(0.78);
+  width: 300px;
+}
+/* LOGIN PAGE ends here
+
+/* REGISTER PAGE STARTS HERE */
+
+.password-strength {
+  margin-top: 10px;
+  position: relative;
+}
+
+.registerParagraph {
+  position: absolute;
+  right: -70px;
+  justify-content: center;
+  top: 640px;
+  color: #ccc;
+  transform: scale(0.78);
+  width: 300px;
+}
+.password-strength-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #ccc;
+}
+
+.password-strength-bar.strength-0 {
+  background-color: #ff4136;
+}
+
+.password-strength-bar.strength-1 {
+  background-color: #ff851b;
+}
+
+.password-strength-bar.strength-2 {
+  background-color: #ffdc00;
+}
+
+.password-strength-bar.strength-3 {
+  background-color: #2ecc40;
+}
+
+.password-strength-text {
+  margin-top: 5px;
+  font-size: 12px;
+  color: white;
+}
+
+.password-requirements {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.password-requirements ul {
+  margin-top: 4px;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.password-requirements li {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.password-text {
+  color: #ccc;
+}
+
+/* REGISTER STARTS HERE */
+
+.registerFormGroup {
+  display: flex;
+  position: absolute;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  flex-flow: column wrap;
+  color: #d9d9d9;
+  max-width: auto;
+  justify-content: center;
+  top: 100px;
+}
+
+.regInput {
+  width: 100%;
+}
+
+.password-requirements ul {
+  margin-left: 20px;
+}
+
+#regPara {
+  position: relative;
+  display: block;
+  color: #ffffff;
+  transform: scale(0.9);
+  left: -5px;
+  top: 10px;
+}
+
+#registerLoader {
+  position: relative;
+  top: 100px;
+  left: 20px;
+}
+#regBtnText {
+  position: relative;
+  top: 400px;
+}
+
+.btnTextCreate {
+  position: relative;
+  top: 550px;
+  left: 20px;
+  color: #ffffff;
+}
+
+/* Product Pages start here */
+.productBackground {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cardProducts {
+  background-image: url("../public/pics/productCard.png");
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: 0 2px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+}
+.cardImage {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+.cardBody {
+  padding-top: 10px;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d9d9d9;
+  font-size: small;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 2px; /* change the size here */
+}
+
+.carousel-indicators {
+  transform: scale(0.5);
+}
+
+.carousel-control-next-icon {
+  transform: scale(0.6);
+}
+.carousel-control-prev-icon {
+  transform: scale(0.6);
+}
+/* UPDATE PRODUCT START HERE */
+/* .updateForm {
+  background-color: white;
+} */
+.carouselSection {
+  margin-top: 60px;
+}
+
+.carousel1 {
+  display: flex;
+  float: top, left;
+  text-align: left;
+  justify-content: left;
+  padding-bottom: 150px;
+  width: 280px;
+  transform: scale(1.2);
+  color: #ada9a9;
+}
+.carousel2 {
+  text-align: left;
+  justify-content: left;
+  float: left;
+  width: 290px;
+  color: #ada9a9;
+}
+
+.carousel3 {
+  text-align: right;
+  justify-content: right;
+  float: right;
+  width: 100px;
+  letter-spacing: 2px;
+  transform: scale(2);
+  padding-bottom: 20px;
+  color: #ada9a9;
+}
+
+.bannerHome {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  background-color: rgb(3, 22, 38, 0);
+  font-size: 1.5rem;
+  color: #f7f3f3;
+}
+
+.bannerTitle {
+  font-size: 4rem;
+  color: #f7f3f3;
+}
+.shopBtn {
+  display: flex;
+  float: left;
+  background-color: #ffee00;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.btnText {
+  font-weight: 600;
+}
+
+.categorySection {
+  padding-top: 100px;
+  display: inline-block;
+  justify-content: center;
+}
+.categoryTxt {
+  color: #ffffff;
+}
+
+.contactSection {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  margin-top: 100px;
+}
+.contactBtn {
+  margin-top: 20px;
+}
+
+.cardHighlight {
+  background-color: rgba(90, 90, 90, 0.6) !important;
+}
+.categoryTxt {
+  display: flex;
+  justify-content: center;
+  color: #dce1e6;
+  font-size: 50px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover {
+  color: inherit;
+  box-shadow: 0 0 5px #000;
+  transform: rotate(40deg);
+}
+.productTableHead {
+  color: #0c0101;
+}
+
+.productTableDetails {
+  color: #006eec;
+}
+
+.productTable {
+  display: inline;
+}
+.productButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.cardImage :hover {
+  rotate: 2deg;
+  transform: scale(1.01);
+}
+.cardProducts :hover {
+  tramsform: scale(1.01);
+}
